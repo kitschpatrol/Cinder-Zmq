@@ -9,6 +9,15 @@ void ofxZmqSubscriber::connect(std::string addr) {
 	ofxZmqSocket::connect(addr);
 }
 
+void ofxZmqSubscriber::bind(std::string addr) {
+	setFilter(filter);
+	ofxZmqSocket::bind(addr);
+}
+
+void ofxZmqSubscriber::unbind(std::string addr) {
+	ofxZmqSocket::unbind(addr);
+}
+
 void ofxZmqSubscriber::disconnect(std::string addr) {
 	ofxZmqSocket::disconnect(addr);
 }

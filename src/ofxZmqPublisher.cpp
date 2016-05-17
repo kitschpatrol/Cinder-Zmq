@@ -4,6 +4,14 @@ ofxZmqPublisher::ofxZmqPublisher()
 		: ofxZmqSocket(ZMQ_PUB) {
 }
 
+void ofxZmqPublisher::connect(std::string addr) {
+	ofxZmqSocket::connect(addr);
+}
+
+void ofxZmqPublisher::disconnect(std::string addr) {
+	ofxZmqSocket::disconnect(addr);
+}
+
 void ofxZmqPublisher::bind(std::string addr) {
 	ofxZmqSocket::bind(addr);
 }

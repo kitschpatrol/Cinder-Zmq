@@ -7,8 +7,11 @@ public:
 	ofxZmqSubscriber();
 
 	void connect(std::string addr);
-	void setFilter(std::string filter);
+	void bind(std::string addr);
 	void disconnect(std::string addr);
+	void unbind(std::string addr);
+
+	void setFilter(std::string filter);
 
 	bool receive(std::string &data);
 	bool receive(ci::Buffer &data);

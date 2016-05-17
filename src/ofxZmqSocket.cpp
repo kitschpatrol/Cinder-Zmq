@@ -103,8 +103,8 @@ bool ofxZmqSocket::receive(ci::Buffer &data) {
 	// TODO clear existing data?
 	// TODO check buffer length?
 	// TODO kind of a mess.
-
-	data.copyFrom(m.data(), std::min(data.getAllocatedSize(), m.size()));
+	data.resize(m.size());
+	data.copyFrom(m.data(), m.size());
 
 	return more;
 }
