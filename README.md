@@ -1,5 +1,4 @@
 # Cinder-Zmq
----
 
 **A wrapper for using the [ZeroMQ](http://zeromq.org) distributed messaging system with [Cinder](https://libcinder.org).**
 
