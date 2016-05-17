@@ -28,6 +28,9 @@
 #ifndef __ZMQ_H_INCLUDED__
 #define __ZMQ_H_INCLUDED__
 
+// Added for Cinder-Zmq block.
+#define ZMQ_STATIC
+
 /*  Version macros for compile-time API version detection                     */
 #define ZMQ_VERSION_MAJOR 4
 #define ZMQ_VERSION_MINOR 1
