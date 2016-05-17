@@ -6,9 +6,8 @@
 
 #include "ofxZmqSocket.h"
 
-#include "ofxZmqSubscriber.h"
-#include "ofxZmqPublisher.h"
-#include "ofxZmqRequest.h"
-#include "ofxZmqReply.h"
 #include "ofxZmqPair.h"
-
+#include "ofxZmqPublisher.h"
+#include "ofxZmqReply.h"
+#include "ofxZmqRequest.h"
+#include "ofxZmqSubscriber.h"
