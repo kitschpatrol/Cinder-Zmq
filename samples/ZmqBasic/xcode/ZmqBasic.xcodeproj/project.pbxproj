@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
+		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		175C36BD3DBC4F768522A8BE /* ofxZmqSubscriber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3C59786A0A24154858AB738 /* ofxZmqSubscriber.cpp */; };
+		01D3084770E24F228826066A /* ofxZmqSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4354009E0D6A4528AE57C8A6 /* ofxZmqSocket.cpp */; };
+		4050425A61E94222BE8473D8 /* ofxZmqRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1412DE2856CC45E5ADD0C01D /* ofxZmqRequest.cpp */; };
+		969C78574E434FD7B9BDBB39 /* ofxZmqReply.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7DCE3E17C4A6EB9A55017 /* ofxZmqReply.cpp */; };
+		5A94322F27DB46E1AEED6D83 /* ofxZmqPublisher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8224AA20E218484E9C7A9D64 /* ofxZmqPublisher.cpp */; };
+		C7B3FAA5EB014353ADA0FCC0 /* ofxZmqPair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D1B1E07407B42638F25F43F /* ofxZmqPair.cpp */; };
+		BE0D8C92736C427CA8E3D9A7 /* ofxZmq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB03540DC148C382E5A34D /* ofxZmq.cpp */; };
+		B1DA34B41B0C4650983F05E0 /* ofxZmqSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = BB464E2EA1744B38B01D3C03 /* ofxZmqSubscriber.h */; };
+		3CF6132E5B674802AD92E500 /* ofxZmqSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 8290519D284C46CA8569110C /* ofxZmqSocket.h */; };
+		396A150CF662410FB111FEF6 /* ofxZmqRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D1470B49A08248E2964099A2 /* ofxZmqRequest.h */; };
+		82B91B5E5CF545DD81E82E45 /* ofxZmqReply.h in Headers */ = {isa = PBXBuildFile; fileRef = AD4EB69C43574AB48D855838 /* ofxZmqReply.h */; };
+		CF7A4467BE374CF4A9A147A2 /* ofxZmqPublisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0773582FAD304123A884C757 /* ofxZmqPublisher.h */; };
+		55E43F83FD2349E087EA4591 /* ofxZmqPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 544A649E5945447EA1B8B642 /* ofxZmqPair.h */; };
+		5814A07E888C426EA1F78325 /* ofxZmqConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E61DF45A053F416F8F0DEFD5 /* ofxZmqConfig.h */; };
+		987277EFCD40425185FA4752 /* ofxZmq.h in Headers */ = {isa = PBXBuildFile; fileRef = D07AAC3553E34AB0A01E3391 /* ofxZmq.h */; };
+		131BCBD526374E5DB7948854 /* ZmqBasic_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9DF4C4DC3C274467AA1DAFEE /* ZmqBasic_Prefix.pch */; };
+		05CE96B4E0D245BD841618E4 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63BB5A7E0167430AAE61C0FA /* CinderApp.icns */; };
+		92212FDB904F402EB59ECFAC /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = E7CDD183CB0D4637BDBE9583 /* Resources.h */; };
+		64EBC141834A466DBF3D2CF4 /* ZmqBasicApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7468F5284DF54BD0B8DB1619 /* ZmqBasicApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* ZmqBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZmqBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7468F5284DF54BD0B8DB1619 /* ZmqBasicApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/ZmqBasicApp.cpp; sourceTree = "<group>"; name = ZmqBasicApp.cpp; };
+		E7CDD183CB0D4637BDBE9583 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
+		63BB5A7E0167430AAE61C0FA /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
+		FE8EE518E07A49EFA7F63515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
+		9DF4C4DC3C274467AA1DAFEE /* ZmqBasic_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ZmqBasic_Prefix.pch; sourceTree = "<group>"; name = ZmqBasic_Prefix.pch; };
+		D07AAC3553E34AB0A01E3391 /* ofxZmq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../src/ofxZmq.h; sourceTree = "<group>"; name = ofxZmq.h; };
+		E61DF45A053F416F8F0DEFD5 /* ofxZmqConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../src/ofxZmqConfig.h; sourceTree = "<group>"; name = ofxZmqConfig.h; };
+		544A649E5945447EA1B8B642 /* ofxZmqPair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../src/ofxZmqPair.h; sourceTree = "<group>"; name = ofxZmqPair.h; };
+		0773582FAD304123A884C757 /* ofxZmqPublisher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../src/ofxZmqPublisher.h; sourceTree = "<group>"; name = ofxZmqPublisher.h; };
+		AD4EB69C43574AB48D855838 /* ofxZmqReply.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../src/ofxZmqReply.h; sourceTree = "<group>"; name = ofxZmqReply.h; };
+		D1470B49A08248E2964099A2 /* ofxZmqRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../src/ofxZmqRequest.h; sourceTree = "<group>"; name = ofxZmqRequest.h; };
+		8290519D284C46CA8569110C /* ofxZmqSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../src/ofxZmqSocket.h; sourceTree = "<group>"; name = ofxZmqSocket.h; };
+		BB464E2EA1744B38B01D3C03 /* ofxZmqSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../src/ofxZmqSubscriber.h; sourceTree = "<group>"; name = ofxZmqSubscriber.h; };
+		9EFB03540DC148C382E5A34D /* ofxZmq.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../src/ofxZmq.cpp; sourceTree = "<group>"; name = ofxZmq.cpp; };
+		4D1B1E07407B42638F25F43F /* ofxZmqPair.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../src/ofxZmqPair.cpp; sourceTree = "<group>"; name = ofxZmqPair.cpp; };
+		8224AA20E218484E9C7A9D64 /* ofxZmqPublisher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../src/ofxZmqPublisher.cpp; sourceTree = "<group>"; name = ofxZmqPublisher.cpp; };
+		8CB7DCE3E17C4A6EB9A55017 /* ofxZmqReply.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../src/ofxZmqReply.cpp; sourceTree = "<group>"; name = ofxZmqReply.cpp; };
+		1412DE2856CC45E5ADD0C01D /* ofxZmqRequest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../src/ofxZmqRequest.cpp; sourceTree = "<group>"; name = ofxZmqRequest.cpp; };
+		4354009E0D6A4528AE57C8A6 /* ofxZmqSocket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../src/ofxZmqSocket.cpp; sourceTree = "<group>"; name = ofxZmqSocket.cpp; };
+		A3C59786A0A24154858AB738 /* ofxZmqSubscriber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../src/ofxZmqSubscriber.cpp; sourceTree = "<group>"; name = ofxZmqSubscriber.cpp; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7468F5284DF54BD0B8DB1619 /* ZmqBasicApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				00B995581B128DF400A5C623 /* IOKit.framework */,
+				00B995591B128DF400A5C623 /* IOSurface.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* ZmqBasic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* ZmqBasic */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = ZmqBasic;
+			sourceTree = "<group>";
+		};
+		E02F8FF6613F4D558539C2EB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D07AAC3553E34AB0A01E3391 /* ofxZmq.h */,
+				E61DF45A053F416F8F0DEFD5 /* ofxZmqConfig.h */,
+				544A649E5945447EA1B8B642 /* ofxZmqPair.h */,
+				0773582FAD304123A884C757 /* ofxZmqPublisher.h */,
+				AD4EB69C43574AB48D855838 /* ofxZmqReply.h */,
+				D1470B49A08248E2964099A2 /* ofxZmqRequest.h */,
+				8290519D284C46CA8569110C /* ofxZmqSocket.h */,
+				BB464E2EA1744B38B01D3C03 /* ofxZmqSubscriber.h */,
+				9EFB03540DC148C382E5A34D /* ofxZmq.cpp */,
+				4D1B1E07407B42638F25F43F /* ofxZmqPair.cpp */,
+				8224AA20E218484E9C7A9D64 /* ofxZmqPublisher.cpp */,
+				8CB7DCE3E17C4A6EB9A55017 /* ofxZmqReply.cpp */,
+				1412DE2856CC45E5ADD0C01D /* ofxZmqRequest.cpp */,
+				4354009E0D6A4528AE57C8A6 /* ofxZmqSocket.cpp */,
+				A3C59786A0A24154858AB738 /* ofxZmqSubscriber.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		047B7D563824466487182E9D /* Zmq */ = {
+			isa = PBXGroup;
+			children = (
+				E02F8FF6613F4D558539C2EB /* src */,
+			);
+			name = Zmq;
+			sourceTree = "<group>";
+		};
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				047B7D563824466487182E9D /* Zmq */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E7CDD183CB0D4637BDBE9583 /* Resources.h */,
+				9DF4C4DC3C274467AA1DAFEE /* ZmqBasic_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63BB5A7E0167430AAE61C0FA /* CinderApp.icns */,
+				FE8EE518E07A49EFA7F63515 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* ZmqBasic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ZmqBasic" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZmqBasic;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ZmqBasic;
+			productReference = 8D1107320486CEB800E47090 /* ZmqBasic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ZmqBasic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* ZmqBasic */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* ZmqBasic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CE96B4E0D245BD841618E4 /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EBC141834A466DBF3D2CF4 /* ZmqBasicApp.cpp in Sources */,
+				BE0D8C92736C427CA8E3D9A7 /* ofxZmq.cpp in Sources */,
+				C7B3FAA5EB014353ADA0FCC0 /* ofxZmqPair.cpp in Sources */,
+				5A94322F27DB46E1AEED6D83 /* ofxZmqPublisher.cpp in Sources */,
+				969C78574E434FD7B9BDBB39 /* ofxZmqReply.cpp in Sources */,
+				4050425A61E94222BE8473D8 /* ofxZmqRequest.cpp in Sources */,
+				01D3084770E24F228826066A /* ofxZmqSocket.cpp in Sources */,
+				175C36BD3DBC4F768522A8BE /* ofxZmqSubscriber.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZmqBasic_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
+					"\"../../../lib/macosx/libzmq-static-d.a\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = ZmqBasic;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZmqBasic_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder.a\"",
+					"\"../../../lib/macosx/libzmq-static.a\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = ZmqBasic;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = "../../../../..";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_TESTABILITY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					../../../include,
+				);
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = "../../../../..";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					../../../include,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ZmqBasic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ZmqBasic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
