@@ -1,0 +1,91 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{D075D72A-C2CD-4E87-A3DB-C8955F798514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Zmq">
+      <UniqueIdentifier>{3E0531DB-2E4F-4E73-8A53-8B7324955F37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Zmq\src">
+      <UniqueIdentifier>{67AD9CDB-F94D-4915-80EC-2BD80AF5F311}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\ImageSubscriberApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImageSubscriberApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ofxZmq.h">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ofxZmqConfig.h">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ofxZmqPair.h">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ofxZmqPublisher.h">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ofxZmqReply.h">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ofxZmqRequest.h">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ofxZmqSocket.h">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ofxZmqSubscriber.h">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\src\ofxZmq.cpp">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ofxZmqPair.cpp">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ofxZmqPublisher.cpp">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ofxZmqReply.cpp">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ofxZmqRequest.cpp">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ofxZmqSocket.cpp">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ofxZmqSubscriber.cpp">
+      <Filter>Blocks\Zmq\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
