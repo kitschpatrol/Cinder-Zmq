@@ -1,0 +1,47 @@
+{
+  "@context": "https://w3id.org/codemeta/3.1",
+  "@type": "SoftwareSourceCode",
+  "name": "Cinder-Zmq",
+  "identifier": "com.kitschpatrol.zmq",
+  "version": "1.0.0",
+  "description": "CinderBlock for the ZeroMQ distributed messaging library. This is a Cinder port of Satoru Higa's openFrameworks addon ofxZmq.",
+  "author": {
+    "@type": "Person",
+    "email": "eric@ericmika.com",
+    "name": "Eric Mika",
+    "url": "https://ericmika.com"
+  },
+  "keywords": [
+    "cinder",
+    "cinderblock",
+    "zeromq",
+    "messaging",
+    "pub-sub",
+    "networking"
+  ],
+  "programmingLanguage": "C++",
+  "operatingSystem": [
+    "macOS",
+    "Windows"
+  ],
+  "url": "https://github.com/kitschpatrol/Cinder-Zmq",
+  "codeRepository": "https://github.com/kitschpatrol/Cinder-Zmq.git",
+  "issueTracker": "https://github.com/kitschpatrol/Cinder-Zmq/issues",
+  "license": "https://spdx.org/licenses/MIT",
+  "dateCreated": "2016-05-17",
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Cinder",
+      "codeRepository": "https://github.com/cinder/Cinder.git",
+      "version": "0.9.1dev"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "ZeroMQ",
+      "url": "https://zeromq.org",
+      "codeRepository": "https://github.com/zeromq/zeromq4-1.git",
+      "version": "4.1.5"
+    }
+  ]
+}

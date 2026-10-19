@@ -27,7 +27,7 @@ void ImageSubscriberApp::setup() {
 	// If we want to send from one publisher to multiple subscribers, we bind the publisher and connect the subscriber
 	// subscriber.connect("tcp://localhost:9999");
 
-	// If we want to send from mulitple publishers to one subscriber, we connect the publisher and bind the subscriber
+	// If we want to send from multiple publishers to one subscriber, we connect the publisher and bind the subscriber
 	subscriber.bind("tcp://*:9999");
 }
 

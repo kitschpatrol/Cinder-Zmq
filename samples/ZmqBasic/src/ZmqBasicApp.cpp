@@ -32,7 +32,7 @@ void ZmqBasicApp::setup() {
 void ZmqBasicApp::mouseDown(MouseEvent event) {
 	std::string data = "this is a test";
 	if (publisher.send(data)) {
-		CI_LOG_V("Sending Data: " << data);
+		CI_LOG_I("Sending Data: " << data);
 	} else {
 		CI_LOG_E("Send failed.");
 	}
@@ -42,7 +42,7 @@ void ZmqBasicApp::update() {
 	while (subscriber.hasWaitingMessage()) {
 		std::string data;
 		subscriber.getNextMessage(data);
-		CI_LOG_V("Received Data: " << data);
+		CI_LOG_I("Received Data: " << data);
 	}
 }
 

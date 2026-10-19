@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <cinder>
 	<block
-	name="Zmq"
-	id="com.kitschpatrol.zmq"
-	git="https://github.com/kitschpatrol/Cinder-Zmq.git"
-	url="https://github.com/kitschpatrol/cinder-zmq"
-	author="Eric Mika"
-	summary="Wrapper around the ZeroMQ distributed messaging library. This is a Cinder port of Satoru Higa's openFrameworks addon ofxZmq."
-	version="1.0.0"
-	library="http://zeromq.org"
-	license="LGPL + static linking exception"
+		name="Zmq"
+		id="com.kitschpatrol.zmq"
+		git="https://github.com/kitschpatrol/Cinder-Zmq.git"
+		url="https://github.com/kitschpatrol/Cinder-Zmq"
+		author="Eric Mika"
+		summary="CinderBlock for the ZeroMQ distributed messaging library. This is a Cinder port of Satoru Higa's openFrameworks addon ofxZmq."
+		version="1.0.0"
+		library="https://zeromq.org"
+		license="MIT"
 	>
 		<supports os="macosx" />
-		<supports os="msw" />	
-	
+		<supports os="msw" />
+
 		<includePath>include</includePath>
 		<headerPattern>src/*.h</headerPattern>
 		<sourcePattern>src/*.cpp</sourcePattern>
-		
+
 		<platform os="macosx">
 			<platform config="debug">
 				<staticLibrary>lib/macosx/libzmq-static-d.a</staticLibrary>
@@ -26,7 +26,7 @@
 				<staticLibrary>lib/macosx/libzmq-static.a</staticLibrary>
 			</platform>
 		</platform>
-		
+
 		<platform os="msw">
 			<includePath>src</includePath>
 			<platform config="debug">
@@ -36,6 +36,5 @@
 				<staticLibrary>lib/msw/$(PlatformTarget)/libzmq.lib</staticLibrary>
 			</platform>
 		</platform>
-		
 	</block>
 </cinder>

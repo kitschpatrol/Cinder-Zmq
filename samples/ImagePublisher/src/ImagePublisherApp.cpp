@@ -29,14 +29,14 @@ void ImagePublisherApp::setup() {
 	// If we want to send from one publisher to multiple subscribers, we bind the publisher and connect the subscriber
 	// publisher.bind("tcp://*:9999");
 
-	// If we want to send from mulitple publishers to one subscriber, we connect the publisher and bind the subscriber
+	// If we want to send from multiple publishers to one subscriber, we connect the publisher and bind the subscriber
 	publisher.connect("tcp://localhost:9999");
 }
 
 void ImagePublisherApp::mouseDown(MouseEvent event) {
-	CI_LOG_V("Sending...");
+	CI_LOG_I("Sending...");
 
-	mTestImage = Surface::create(loadImage(loadUrl("http://thecatapi.com/api/images/get")));
+	mTestImage = Surface::create(loadImage(loadUrl("https://cataas.com/cat")));
 	mTestTexture = gl::Texture::create(*mTestImage);
 
 	// Resize Image
@@ -54,7 +54,7 @@ void ImagePublisherApp::mouseDown(MouseEvent event) {
 	size_t size = os->tell();
 
 	if (publisher.send(data, size)) {
-		CI_LOG_V("Sent " << size / 1000 << "kB");
+		CI_LOG_I("Sent " << size / 1000 << "kB");
 	} else {
 		CI_LOG_E("Send failed.");
 	}

@@ -115,7 +115,7 @@ void ofxZmqSocket::setIdentity(std::string data) {
 
 std::string ofxZmqSocket::getIdentity() {
 	char buf[255];
-	size_t size = 0;
+	size_t size = sizeof(buf);
 	socket.getsockopt(ZMQ_IDENTITY, buf, &size);
 	return std::string(buf, buf + size);
 }
@@ -160,7 +160,7 @@ long ofxZmqSocket::getReceiveHighWaterMark() {
 }
 
 bool ofxZmqSocket::hasWaitingMessage(long timeout_millis) {
-	return zmq::poll(items, 1, timeout_millis * 1000) > 0;
+	return zmq::poll(items, 1, timeout_millis) > 0;
 }
 
 bool ofxZmqSocket::getNextMessage(std::string &data) {
